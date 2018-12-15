@@ -1,1 +1,19 @@
-style.css
+h1{	margin-top: -10px;	color: #000; font-weight: bold; text-align: left;}
+h2, h3{	font-weight: bold;	text-align: center;}
+.navbar-header{background-color: gray;	border: 2px solid #000;	border-radius: 0;}
+.navbar-default .navbar-nav>li>a{color: #000; text-align: center;background-color: #fff;}
+.nav>li{border: 1px solid #000;}
+.navbar-default .navbar-toggle { border-color: #000; }
+.navbar-default .navbar-toggle:focus{border-color: #ddd;}
+.navbar-default .navbar-toggle .icon-bar { background-color: #000; }
+.navbar-default .navbar-toggle .icon-bar:focus, 
+.navbar-default .navbar-toggle .icon-bar:active{background-color: #ddd;}
+.row>div{background-color: gray;}
+.col-xs-12 {
+	float: none;
+	width: 70%;
+    position: relative;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
