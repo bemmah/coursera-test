@@ -1,25 +1,24 @@
 <!DOCTYPE html>
-<html ng-app="LunchCheck">
-    <head>
-        <meta charset="utf-8">
-        <script src="../js/angular.min.js"></script>
-        <script src="app.js"></script>
-        <link rel="stylesheet" href="app.css" />
-        <style>span{font-weight: bold;}</style>
-        <title>Module1 Solution - Single Page Web Applications with AngularJS</title>
-    </head>
-    <body>
-        <h1>Module 1 Solution for Single Page Web Applications with AngularJS course</h1>
-        <div ng-controller="lunchCheckController">
-            <label for="lunchItems">
-                List a maximum of 3 items you eat for lunch <span>(seperate with commas)</span>
-            </label>
-            <input type="text" name="lunchItems" ng-model="inputBox">
-            <button type="button" ng-click="button()">Check If Too  Much</button><br>
-            {{lunchItemsMessage}}
-        </div>
-        
-        
-        <script src="../js/angular.min.js"></script>
-    </body>
+<html ng-app='LunchCheck'>
+  <head>
+    <meta charset="utf-8">
+    <script src="../js/angular.min.js"></script>
+    <script src="app.js"></script>
+    <style> 
+       span, .boldFeedback { font-weight: bold; }
+    </style>
+    <title>Module 1 Solution - Single Page Web Applications with AngularJS</title>
+  </head>
+  <body>
+    <h1>Module 1 Solution - Single Page Web Applications with AngularJS</h1>
+    <div ng-controller='LunchCheckController'>
+       List <span>at most </span>3 items you eat for lunch <span>(seperated by commas)</span>:<br>
+       <input type="text" ng-model="lunchItems"> 
+       <button  ng-click="checkItems()" type="button">Check If Too Much</button><br><br>
+       <div class="boldFeedback">
+          {{feedback}}   
+       </div>
+       
+    </div>
+  </body>
 </html>
